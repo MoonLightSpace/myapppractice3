@@ -1,0 +1,71 @@
+﻿<!doctype html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mustache Enthusiast</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+    <script type="text/javascript" src="~/js/site.js"></script>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html" class="logo">
+            <img src="~/images/logo.jpg" alt="">
+        </a>
+        <ul id="navigation">
+            <li>
+                @Html.ActionLink("Home","Index")
+            </li>
+            <li class="selected">
+                @Html.ActionLink("About", "About")
+            </li>
+            <li>
+                @Html.ActionLink("Gallery", "gallery")
+            </li>
+            <li>
+                @Html.ActionLink("Blog", "Blog")
+            </li>
+            <li>
+                @Html.ActionLink("Contact", "Contact")
+            </li>
+        </ul>
+
+    </div>
+    <div id="body">
+        <h1><span>mustacchio History</span></h1>
+        <div>
+            <div class="article">
+                <h3> Where does it come from?</h3>
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </p>
+                <h3> Where does it come from?</h3>
+                <p>
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <p>&copy; 2019 by Mustacchio. All rights reserved.</p>
+            <ul>
+                <li>
+                    <img src="~/images/icon-googleplus.jpg" alt="">
+                </li>
+                <li>
+                    <img src="~/images/icon-pinterest.jpg" alt="">
+                </li>
+                <li>
+                    <img src="~/images/icon-twitter.jpg" alt="">
+                </li>
+                <li>
+                    <img src="~/images/icon-facebook.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustaccio</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    <script type="text/javascript" src="~/js/site.js"></script>
+</head>
+<body>
+
+    <div id="header">
+        <a href="Index.cshtml" class="logo">
+            <img src="~/images/logo.jpg" alt="">
+        </a>
+        <ul id="navigation">
+            <li class="selected">
+                @Html.ActionLink("Home", "Index")
+            </li>
+            <li >
+                @Html.ActionLink("About", "About")
+            </li>
+            <li>
+                @Html.ActionLink("Gallery", "gallery")
+            </li>
+            <li>
+                @Html.ActionLink("Blog", "Blog")
+            </li>
+            <li>
+                @Html.ActionLink("Contact", "Contact")
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="body">
+        <div id="featured">
+            <img src="~/images/the-beacon.jpg" alt="">
+            <div>
+                <h2>the beacon to all mankind</h2>
+                <span>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</span>
+                <span>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</span>
+                <a  class="more">Learn About it</a>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a >
+                    <img src="~/images/the-father.jpg" alt="">
+                    <span>the father</span>
+                </a>
+            </li>
+            <li>
+                <a >
+                    <img src="~/images/the-actor.jpg" alt="">
+                    <span>the actor</span>
+                </a>
+            </li>
+            <li>
+                <a >
+                    <img src="~/images/the-nerd.jpg" alt="">
+                    <span>the nerd</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="footer">
+        <div>
+            <p>&copy; 2019 by Mustacchio. All rights reserved.</p>
+            <ul>
+                <li>
+                    <img src="~/images/icon-googleplus.jpg" alt="">
+                </li>
+                <li>
+                    <img src="~/images/icon-pinterest.jpg" alt="">
+                </li>
+                <li>
+                    <img src="~/images/icon-twitter.jpg" alt="">
+                </li>
+                <li>
+                    <img src="~/images/icon-facebook.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
